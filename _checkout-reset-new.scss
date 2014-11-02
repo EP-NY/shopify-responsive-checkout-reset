@@ -58,7 +58,7 @@ html, .chrome, .firefox, .safari, .boxshadow, .ie8, .lt-ie9, .no-js  {
     padding: 0;
     border: none;
     border-radius: 0;
-    color: #000;
+    color: inherit;
     cursor: pointer;
     width: auto;
     text-align: left;
@@ -66,23 +66,20 @@ html, .chrome, .firefox, .safari, .boxshadow, .ie8, .lt-ie9, .no-js  {
     font-size: 1rem;
     background-color: transparent;
     &:hover {
-      color: #000;
       background-color: transparent;
     }
     &:focus {
       &:hover {
-        color: #000;
-        background-color: transparent;
+        background-color: inherit;
       }
     }
 
     &.btn--primary {
       padding: 0;
-      background-color: transparent;
-      color: #000;
+      background-color: inherit;
+      color: inherit;
       &:hover, &:focus {
-        color: #000;
-        background-color: transparent;
+        background-color: inherit;
       }
     }
   }
