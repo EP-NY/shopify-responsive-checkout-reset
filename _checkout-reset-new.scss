@@ -7,6 +7,10 @@ html, .chrome, .firefox, .safari, .boxshadow, .ie8, .lt-ie9, .no-js  {
   font-family: 'Times New Roman', Times, serif;
   font-size: 16px;
   
+  * {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
 
   h1,h2,h3,h4,h5 {
     letter-spacing: normal;
@@ -28,6 +32,7 @@ html, .chrome, .firefox, .safari, .boxshadow, .ie8, .lt-ie9, .no-js  {
     padding: 0;
     max-width: none;
     margin: 0;
+    width: auto;
   }
 
   .shop {
@@ -92,6 +97,9 @@ html, .chrome, .firefox, .safari, .boxshadow, .ie8, .lt-ie9, .no-js  {
     text-shadow: none;
     display: inline-block;
     text-align: start;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
   }
 
   input, input[type=password], input[type=search] {
@@ -147,6 +155,9 @@ html, .chrome, .firefox, .safari, .boxshadow, .ie8, .lt-ie9, .no-js  {
     height: auto;
     border: 0;
     vertical-align: 0;
+    &:after {
+      content:none;
+    }
     &:checked {
       &:after {
         content:none;
@@ -219,8 +230,7 @@ html, .chrome, .firefox, .safari, .boxshadow, .ie8, .lt-ie9, .no-js  {
   }
 
   .order-summary-recap {
-    box-shadow: none;
-    -webkit-box-shadow: none;
+    display: block;
   }
   .field--focus {
     z-index: 0;
