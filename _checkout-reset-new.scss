@@ -1,7 +1,8 @@
 // Shopify Responsive Checkout Reset
-// Created Saturday, November 1 2014 by Joseph Bergdoll
+// Created Saturday, 1 November 2014 by Joseph Bergdoll
 // www.osephj.com
 // @josephbergdoll on twitter
+// Last updated Monday, 3 November 2014
 
 html, .chrome, .firefox, .safari, .boxshadow, .ie8, .lt-ie9, .no-js  {
   font-family: 'Times New Roman', Times, serif;
@@ -451,7 +452,15 @@ html, .chrome, .firefox, .safari, .boxshadow, .ie8, .lt-ie9, .no-js  {
       }
     }
     &:after {
-      content:none;
+      content: none;
+      background: none;
+      position: static;
+      top: 0;
+      left: auto;
+      width: 0;
+      height: 0;
+      margin-top: 0;
+      margin-left: 0;
     }
   }
 
